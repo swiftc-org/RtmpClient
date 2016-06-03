@@ -12,11 +12,50 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let rtmp = RTMPClient()
+    private let urlStr = "rtmp://swiftc.org/live/livestream"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        rtmp.setLogLevel = RTMP_LOGALL
+        rtmp.connect(urlStr)
+        
+        pushLocalFlv()
+        
         return true
+    }
+    
+    private func pushLocalFlv() {
+        
+        let resourcePath = NSBundle.mainBundle().resourcePath!
+        let flvPath = resourcePath + "/demo.flv"
+        
+        let flvData = NSData(contentsOfFile: flvPath)
+        guard flvData != nil else {
+            print("video data is nil")
+            return
+        }
+        
+        let length = flvData!.length
+        print("origin video lenght: \(length / 1024 / 1024 )M")
+        
+        var offset = 0
+        let chunkSize = 100 * 5120
+        
+        while offset < length {
+            let thisChunkSize = length - offset > chunkSize ? chunkSize : length - offset
+            let chunk = NSData(bytesNoCopy: UnsafeMutablePointer<Void>(flvData!.bytes),
+                               length: thisChunkSize,
+                               freeWhenDone: false)
+            rtmp.push(chunk)
+            offset += thisChunkSize
+            sleep(1)
+        }
+        
+        print("finished push")
+        rtmp.close()
     }
 
     func applicationWillResignActive(application: UIApplication) {

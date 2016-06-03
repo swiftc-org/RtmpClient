@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2415AA0A1D0181D0000223BB /* demo.flv in Resources */ = {isa = PBXBuildFile; fileRef = 2415AA091D0180BF000223BB /* demo.flv */; };
 		24221D491D007CEB00265880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24221D481D007CEB00265880 /* AppDelegate.swift */; };
 		24221D4B1D007CEB00265880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24221D4A1D007CEB00265880 /* ViewController.swift */; };
 		24221D4E1D007CEB00265880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24221D4C1D007CEB00265880 /* Main.storyboard */; };
 		24221D501D007CEB00265880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24221D4F1D007CEB00265880 /* Assets.xcassets */; };
 		24221D531D007CEB00265880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24221D511D007CEB00265880 /* LaunchScreen.storyboard */; };
+		24221D6A1D007D2E00265880 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = 24221D5C1D007D2E00265880 /* amf.c */; };
+		24221D6B1D007D2E00265880 /* hashswf.c in Sources */ = {isa = PBXBuildFile; fileRef = 24221D621D007D2E00265880 /* hashswf.c */; };
+		24221D6C1D007D2E00265880 /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = 24221D641D007D2E00265880 /* log.c */; };
+		24221D6D1D007D2E00265880 /* parseurl.c in Sources */ = {isa = PBXBuildFile; fileRef = 24221D661D007D2E00265880 /* parseurl.c */; };
+		24221D6E1D007D2E00265880 /* rtmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 24221D681D007D2E00265880 /* rtmp.c */; };
+		24221D701D007D8700265880 /* RTMPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24221D6F1D007D8700265880 /* RTMPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2415AA091D0180BF000223BB /* demo.flv */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.flv; sourceTree = "<group>"; };
 		24221D451D007CEB00265880 /* librtmpDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = librtmpDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24221D481D007CEB00265880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24221D4A1D007CEB00265880 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,22 @@
 		24221D4F1D007CEB00265880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24221D521D007CEB00265880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24221D541D007CEB00265880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24221D5B1D007D2D00265880 /* librtmpDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "librtmpDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		24221D5C1D007D2E00265880 /* amf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = amf.c; sourceTree = "<group>"; };
+		24221D5D1D007D2E00265880 /* amf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amf.h; sourceTree = "<group>"; };
+		24221D5E1D007D2E00265880 /* bytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytes.h; sourceTree = "<group>"; };
+		24221D5F1D007D2E00265880 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		24221D601D007D2E00265880 /* dhgroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dhgroups.h; sourceTree = "<group>"; };
+		24221D611D007D2E00265880 /* handshake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = handshake.h; sourceTree = "<group>"; };
+		24221D621D007D2E00265880 /* hashswf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hashswf.c; sourceTree = "<group>"; };
+		24221D631D007D2E00265880 /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		24221D641D007D2E00265880 /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = log.c; sourceTree = "<group>"; };
+		24221D651D007D2E00265880 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		24221D661D007D2E00265880 /* parseurl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parseurl.c; sourceTree = "<group>"; };
+		24221D671D007D2E00265880 /* rtmp_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp_sys.h; sourceTree = "<group>"; };
+		24221D681D007D2E00265880 /* rtmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rtmp.c; sourceTree = "<group>"; };
+		24221D691D007D2E00265880 /* rtmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp.h; sourceTree = "<group>"; };
+		24221D6F1D007D8700265880 /* RTMPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTMPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +78,39 @@
 		24221D471D007CEB00265880 /* librtmpDemo */ = {
 			isa = PBXGroup;
 			children = (
+				24221D5A1D007D0300265880 /* librtmp */,
 				24221D481D007CEB00265880 /* AppDelegate.swift */,
 				24221D4A1D007CEB00265880 /* ViewController.swift */,
 				24221D4C1D007CEB00265880 /* Main.storyboard */,
 				24221D4F1D007CEB00265880 /* Assets.xcassets */,
 				24221D511D007CEB00265880 /* LaunchScreen.storyboard */,
 				24221D541D007CEB00265880 /* Info.plist */,
+				2415AA091D0180BF000223BB /* demo.flv */,
 			);
 			path = librtmpDemo;
+			sourceTree = "<group>";
+		};
+		24221D5A1D007D0300265880 /* librtmp */ = {
+			isa = PBXGroup;
+			children = (
+				24221D5C1D007D2E00265880 /* amf.c */,
+				24221D5D1D007D2E00265880 /* amf.h */,
+				24221D5E1D007D2E00265880 /* bytes.h */,
+				24221D5F1D007D2E00265880 /* dh.h */,
+				24221D601D007D2E00265880 /* dhgroups.h */,
+				24221D611D007D2E00265880 /* handshake.h */,
+				24221D621D007D2E00265880 /* hashswf.c */,
+				24221D631D007D2E00265880 /* http.h */,
+				24221D641D007D2E00265880 /* log.c */,
+				24221D651D007D2E00265880 /* log.h */,
+				24221D661D007D2E00265880 /* parseurl.c */,
+				24221D671D007D2E00265880 /* rtmp_sys.h */,
+				24221D681D007D2E00265880 /* rtmp.c */,
+				24221D691D007D2E00265880 /* rtmp.h */,
+				24221D5B1D007D2D00265880 /* librtmpDemo-Bridging-Header.h */,
+				24221D6F1D007D8700265880 /* RTMPClient.swift */,
+			);
+			name = librtmp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +145,7 @@
 				TargetAttributes = {
 					24221D441D007CEB00265880 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 58TBAPTS62;
 					};
 				};
 			};
@@ -122,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2415AA0A1D0181D0000223BB /* demo.flv in Resources */,
 				24221D531D007CEB00265880 /* LaunchScreen.storyboard in Resources */,
 				24221D501D007CEB00265880 /* Assets.xcassets in Resources */,
 				24221D4E1D007CEB00265880 /* Main.storyboard in Resources */,
@@ -135,7 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24221D6A1D007D2E00265880 /* amf.c in Sources */,
+				24221D6E1D007D2E00265880 /* rtmp.c in Sources */,
+				24221D6D1D007D2E00265880 /* parseurl.c in Sources */,
 				24221D4B1D007CEB00265880 /* ViewController.swift in Sources */,
+				24221D6C1D007D2E00265880 /* log.c in Sources */,
+				24221D701D007D8700265880 /* RTMPClient.swift in Sources */,
+				24221D6B1D007D2E00265880 /* hashswf.c in Sources */,
 				24221D491D007CEB00265880 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +306,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = librtmpDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swiftc.org.librtmpDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "librtmpDemo/librtmpDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -260,10 +325,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = librtmpDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swiftc.org.librtmpDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "librtmpDemo/librtmpDemo-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -286,6 +358,7 @@
 				24221D591D007CEB00265880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
