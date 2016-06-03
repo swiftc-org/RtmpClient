@@ -764,7 +764,6 @@ int RTMP_SetupURL(RTMP *r, const char *url)
 
   if (ptr)
     *ptr = '\0';
-    printf("url:%s\n", url);
   len = strlen(url);
   ret = RTMP_ParseURL(url, &r->Link.protocol, &r->Link.hostname,
   	&port, &r->Link.playpath0, &r->Link.app);
