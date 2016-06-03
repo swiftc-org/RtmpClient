@@ -36,6 +36,8 @@
 #include <stddef.h>
 
 #include "amf.h"
+#include "log.h"
+#include "http.h"
 
 #ifdef __cplusplus
 extern "C"
