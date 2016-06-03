@@ -4288,7 +4288,6 @@ RTMPSockBuf_Fill(RTMPSockBuf *sb)
 	}
       break;
     }
-    printf("nBytes: %d\n", nBytes);
   return nBytes;
 }
 
